@@ -24,7 +24,21 @@ $('.slider-popup').slick({
   slidesToShow: 6,
   slidesToScroll: 3,
   nextArrow: '<button class="slick-arrow nt slick-next"><i class="fas fa-chevron-right"></i></button> ',
-  prevArrow: '<button class="slick-arrow pr slick-prev"><i class="fas fa-chevron-left"></i></button> '
+  prevArrow: '<button class="slick-arrow pr slick-prev"><i class="fas fa-chevron-left"></i></button> ',
+  responsive: [
+   {
+     breakpoint: 769,
+     settings: {
+       slidesToShow: 3
+     }
+   },
+   {
+     breakpoint: 480,
+     settings: {
+       slidesToShow: 1
+     }
+   }
+ ]
 });
 
 $(document).ready(function() {
@@ -37,7 +51,15 @@ $(document).ready(function() {
       } else {
         $(".accordion .accord-content").slideUp("slow");
         $(this).next("div").slideToggle("middle");
-        
+
       }
   });
+});
+
+$('.product-slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true
 });
