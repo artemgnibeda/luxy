@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,700i&display=swap');
+
 @font-face{
 font-family: 'ActaW01-Book';
 src: url('fonts/Acta-W01-Book.ttf');
@@ -63,7 +65,7 @@ body {
   justify-content: space-around;
 }
 .product-photo-section {
-  width: 85%;
+  width: 80%;
 }
 .product-photo-section img {
   display: none;
@@ -82,14 +84,14 @@ body {
     width: 50px;
     display: inline-block;
     box-shadow: 3px 4px 12px -5px #7a7a7a;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     img {
       width: 100%;
     }
   }
 }
 .product-info {
-  padding-left: 20px;
+  padding-right: 20px;
   &>div {
     padding: 25px 0;
     border-bottom: 1px solid #a1a1a1;
@@ -219,7 +221,7 @@ body {
     }
     .merits-text {
       line-height: 21px;
-      margin-top: 20px;
+      margin-top: 15px;
       font-family: $futmed;
     }
   }
@@ -331,6 +333,9 @@ body {
       width: 35px;
     }
 }
+.pd-20 {
+  padding: 20px 0;
+}
 
 .bg-white {
   background-color: #fff;
@@ -354,6 +359,8 @@ body {
     text-decoration: none;
     display: inline-block;
     margin-bottom: 30px;
+    font-family:$futmed;
+    letter-spacing: 0.1rem;
   }
   .inform-h4 {
     font-family:$futmed;
@@ -436,7 +443,15 @@ body {
   }
 }
 .accord-content { display: none; }
-
+.accord-h {
+  font-family: $futhevy;
+  letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding-top: 1.333rem;
+    margin-bottom: 1rem;
+color: #000000;
+}
 
 .accordion-section {
   margin-top: 5.61023rem;
@@ -454,6 +469,23 @@ body {
   .accord-content {
     padding-right: 50px;
     margin-right: 3.15733rem;
+    li {
+      display: list-item;
+      list-style-position: inside;
+      list-style-type: circle;
+      line-height: 1.60181rem;
+      margin-bottom: 20px;
+      a {
+        color: #6E6E6E;
+        border-bottom: 1px solid #6E6E6E;
+      }
+      span {
+        color:#000;
+      }
+    }
+  }
+  .number-list {
+
   }
   .accord-header {
     padding: 1rem;
@@ -501,11 +533,32 @@ body {
   }
 }
 
-.accrod-p {
+.accord-p {
   font-size: .88889rem;
   line-height: 21px;
   margin-bottom: 20px;
-
+  padding-top: 10px;
+  a {
+    color: #6E6E6E;
+    border-bottom: 1px solid #6E6E6E;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover {
+      color: #000;
+    }
+  }
+}
+.accord-h1 {
+  padding-top: 1.333rem;
+    font-size: 2.02729rem;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.accord-h2 {
+      font-size: 1.60181rem;
+      color: #000;
+      padding-top: 1.333rem;
+      margin-bottom: 1rem;
 }
 .accord-h3 {
   font-family: $futmed;
@@ -590,9 +643,43 @@ footer {
     }
   }
 }
-
-
+#choose-page {
+  background-color: #ECECEC;
+  .header-p {
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(138, 138, 138);
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+    padding: 12px 0;
+    margin: 0 20px;
+  }
+  .bg-g {
+    background-color: rgb(245, 245, 245);
+  }
+}
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.video-pop iframe {
+  width: 50vw!important;
+  height: 50vh!important;
+}
+@media (max-width: 1440px) {
+  .video-pop iframe {
+    width: 70vw!important;
+    height: 50vh!important;
+  }
+}
 @media (max-width: 1023px) {
+  .mob-white {
+    background-color: #fff!important;
+  }
   .bg-white-mob {
     background-color: #fff;
     z-index: 2;
@@ -666,7 +753,8 @@ footer {
   }
   .video-pop {
     iframe {
-      width: 100%!important;
+      width: 70vw!important;
+      height: 50vh!important;
     }
   }
 
@@ -734,8 +822,22 @@ footer {
 }
 
 @media (max-width: 350px) {
+  .video-pop {
+    iframe {
+      width: 90vw!important;
+      height: 50vh!important;
+    }
+  }
+  .merits .merits-item:nth-child(2) .merits-text {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .merits .merits-item .merits-text {
+    line-height: 1rem;
+  }
   .add-bag-btn {
-        padding: 17px 50px;
+        padding: 17px 70px;
   }
   .slider-popup-section {
     padding-top: 50px;
