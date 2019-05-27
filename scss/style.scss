@@ -673,6 +673,23 @@ footer {
 }
 
 @media (max-width: 550px) {
+  footer .footer-nav li {
+    margin-bottom: 15px;
+  }
+  .f-first-line {
+    flex-direction: column-reverse;
+    text-align: center;
+    & > div {
+      margin-bottom: 25px;
+    }
+    .number-f{
+      text-align: center;
+    }
+    .f-text {
+      margin-top: 10px;
+      padding: 0 15px;
+    }
+  }
   .merits .merits-item {
     padding: 0 10px;
   }
