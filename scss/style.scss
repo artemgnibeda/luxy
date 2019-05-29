@@ -208,6 +208,7 @@ body {
   padding: 17px 80px;
   background-color: #CD627D;
   color: #fff;
+  min-width: 272px;
 }
 .merits {
   display: flex;
@@ -975,7 +976,57 @@ border: 2px solid #323232;
     }
   }
 }
+.whats {
+  background-color: #4fc45d;
+  margin-top: 15px;
+}
+.add-pop {
+  max-width: 500px;
+  text-align: center;
+  width: 100%;
+  padding: 20px 30px;;
+  margin: 0 auto;
+  background-color: #F5F3EF;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  position: relative;
+  .inform-h2 {
+    font-size: 1.50181rem;
+margin-bottom: 20px;
+  }
+  .diss {
+    position: absolute;
+    right: 0px;
+    top: -40px;
+    width: 35px;
+    img {
+      width: 100%;
+    }
 
+  }
+  input {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 20px 25px;
+    font-size: 15px;
+    border: 1px solid #000;
+  }
+  button {
+    margin-left: 10px;
+    font-family: "Futura LT Heavy";
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: .79012rem;
+    letter-spacing: 4px;
+    background-color: inherit;
+    margin-top: 20px;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 15px;
+  }
+}
 @media (max-width: 1440px) {
   .video-pop iframe {
     width: 70vw!important;
