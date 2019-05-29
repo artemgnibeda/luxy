@@ -35,7 +35,8 @@ $('.slider-popup').slick({
    {
      breakpoint: 480,
      settings: {
-       slidesToShow: 1
+       slidesToShow: 1,
+       slidesToScroll: 1
      }
    }
  ]
@@ -62,4 +63,19 @@ $('.product-slider').slick({
   slidesToScroll: 1,
   arrows: false,
   dots: true
+});
+
+
+$(function () {
+    "use strict";
+
+    $(".slider-popop_block").click(function () {
+      var bg = $(this).css('background-image');
+      bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "");
+        $(".show").fadeIn();
+        $(".slider-pop > img").attr("src", bg);
+    });
+
+
+
 });
